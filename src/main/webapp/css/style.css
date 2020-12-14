@@ -1,6 +1,6 @@
 body {
 	font-family: Arial;
-	background-image: url('src/main/webapp/img/Kevin.jpg');
+	background-image: image-url("Kevin.jpg");
     background-color: #F0F1F2;
 
 }
