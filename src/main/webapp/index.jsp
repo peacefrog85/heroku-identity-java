@@ -46,6 +46,7 @@ if (cookies != null) {
 </center>
 <% } else {  %>
  <div class="centered">
+<img src='/img/Kevin.jpg'>
  <span class=""><a href="/_saml?RelayState=%2F" class="button center">Login</a></span>
  </div>
 
