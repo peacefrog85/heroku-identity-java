@@ -46,8 +46,10 @@ if (cookies != null) {
 </center>
 <% } else {  %>
  <div class="container">
-	<img src='/img/Kevin.jpg'>
- 	<div class="overlay"><a href="/_saml?RelayState=%2F" class="button">Login</a></div>
+	<img src='/img/Kevin.jpg' class="image">
+ 	<div class="overlay">
+		 <a href="/_saml?RelayState=%2F" class="button">Login</a>
+	</div>
  </div>
 
 <% } %>
