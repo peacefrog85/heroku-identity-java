@@ -45,9 +45,8 @@ if (cookies != null) {
 <a href="/_saml?logout=true" class="button center">Logout</a>
 </center>
 <% } else {  %>
-<img src='/img/Kevin.jpg'>
  <div class="lefta">
- <span class=""><a href="/_saml?RelayState=%2F" class="button center">Login</a></span>
+ <span class="" style="background-image: url('/img/Kevin.jpg');"><a href="/_saml?RelayState=%2F" class="button center">Login</a></span>
  </div>
 
 <% } %>
