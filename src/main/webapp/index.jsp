@@ -30,7 +30,7 @@ if (cookies != null) {
 	Iterator iterator = keySet.iterator();
 	while (iterator.hasNext()){
 		String key = (String)iterator.next();
-		if(key == 'username')
+		if(key.equals("username"))
 		{
 			%><tr><td><b><%= key %>:</b></td><td><%
 			ArrayList<String> values = (ArrayList<String>)attributes.getValues(key);
