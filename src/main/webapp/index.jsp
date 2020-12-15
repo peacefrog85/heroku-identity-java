@@ -32,7 +32,7 @@ if (cookies != null) {
 		String key = (String)iterator.next();
 		if(key.equals("username"))
 		{
-			%><tr><td><b><%= key %>:</b></td><td><%
+			%><tr class="info"><td><b><%= key %>:</b></td><td><%
 			ArrayList<String> values = (ArrayList<String>)attributes.getValues(key);
 			for (String value : values) {
 				%><%= value %><br/><%
