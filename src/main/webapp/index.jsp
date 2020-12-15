@@ -22,7 +22,7 @@ if (cookies != null) {
 
 <% if (identity != null ) { %>
 <center>
-<h2><%= identity.getSubject() %></h2>
+<!--h2><%= identity.getSubject() %></h2-->
 <table border="0" cellpadding="5">
 <%
 	Bag attributes = identity.getAttributes();
@@ -30,18 +30,21 @@ if (cookies != null) {
 	Iterator iterator = keySet.iterator();
 	while (iterator.hasNext()){
 		String key = (String)iterator.next();
-		%><tr><td><b><%= key %>:</b></td><td><%
-		ArrayList<String> values = (ArrayList<String>)attributes.getValues(key);
-		for (String value : values) {
-			%><%= value %><br/><%
+		if(key == 'username')
+		{
+			%><tr><td><b><%= key %>:</b></td><td><%
+			ArrayList<String> values = (ArrayList<String>)attributes.getValues(key);
+			for (String value : values) {
+				%><%= value %><br/><%
+			}
+			%></td></tr><%
 		}
-		%></td></tr><%
-
 	}
 
 %>
 </table>
 <br>
+<a href="https://pmbext-developer-edition.ap16.force.com/customer/" class="button center">Update My Profile</a>
 <a href="/_saml?logout=true" class="button center">Logout</a>
 </center>
 <% } else {  %>
